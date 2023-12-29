@@ -4,14 +4,14 @@ Provisioning a new site
 ## Required packages;
 
 * nginx
-* Python 3.11.2
+* Python 3.11
 * Virtualenv + pip
 * Git
 
 eg, on Ubunto:
     sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt update
-    sudo apt install nginx git python3.11.2 python3.11.2-venv
+    sudo apt install nginx git python3.11 python3.11-venv
 
 
 ## Nginx Virtual Host config

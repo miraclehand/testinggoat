@@ -1,13 +1,13 @@
 [Unit]
-Description=Gunicorn server for yongeun-superlists-staging.duckdns.org;
+Description=Gunicorn server for DOMAIN;
 
 [Service]
 Restart=on-failure
 User=ypark
-WorkingDirectory=/home/ypark/sites/yongeun-superlists-staging.duckdns.org;
-EnvironmentFIle=/home/ypark/sites/yongeun-superlists-staging.duckdns.org/.env;
+WorkingDirectory=/home/ypark/sites/DOMAIN;
+EnvironmentFIle=/home/ypark/sites/DOMAIN/.env;
 
-ExecStart=/home/ypark/sites/yongeun-superlists-staging.duckdns.org/.venv/bin/gunicorn --bind unix:/tmp/yongeun-superlists-staging.duckdns.socket superlists:wsgi:application
+ExecStart=/home/ypark/sites/DOMAIN/.venv/bin/gunicorn --bind unix:/tmp/DOMAIN.socket superlists:wsgi:application
 
 [Install]
 WantedBy=multi-user.target
