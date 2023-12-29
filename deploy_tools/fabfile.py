@@ -2,7 +2,7 @@ import random
 from fabric.contrib.files import append, exists
 from fabric.api import cd, env, local, run
 
-REPO_URL = 'https://github.com/miraclehand/tdd.git'
+REPO_URL = 'https://github.com/miraclehand/testinggoat.git'
 
 def deploy():
     site_folder = f'/home/{env.user}/sites/{env.host}'
