@@ -9,10 +9,7 @@ class ItemValidationTest(FunctionalTest):
         inputbox = self.get_item_input_box()
         inputbox.send_keys(Keys.ENTER)
 
-        self.wait_for(lambda: self.assertEqual(
-            self.browser.find_element(By.CSS_SELECTOR, '.has-error').text,
-                "You can't have an empty list item"
-        ))
+        self.wait_for(lambda: self.browser.find_element(By.CSS_SELECTOR, '#id_text:invalid'))
 
         inputbox = self.get_item_input_box()
         inputbox.send_keys('Buy milk')
